@@ -1,17 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <NavBar></NavBar>
+    <Employee></Employee>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Employee from './components/Users/Employee.vue'
+import NavBar from './components/NavBar.vue'
+import Login from './components/Login.vue'
+import HRDirector from './components/Users/HRDirector.vue'
+import Manager from './components/Users/Manager.vue'
 
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
+    name: 'app',
+    components: {
+        Login,
+        NavBar,
+        Employee,
+        Manager,
+        HRDirector,
   }
 }
 </script>
@@ -26,3 +35,6 @@ export default {
   margin-top: 60px;
 }
 </style>
+
+
+<!-- Test if user is connected-->

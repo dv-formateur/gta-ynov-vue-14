@@ -1,5 +1,8 @@
 # gta-ynov-vue
 
+### 22 November 2018
+Work on the login page and the storage of data
+
 ### 16 November 2018
 Understand how works Vue CLI and how to start a project with it
 
