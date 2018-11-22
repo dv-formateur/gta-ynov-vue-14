@@ -1,7 +1,7 @@
 <template>
     <div>
-        <a href=""></a>
-        <a href=""></a>
+        <router-link to=""></router-link>
+        <router-link to=""></router-link>
     </div>
 </template>
 <script>

@@ -1,12 +1,23 @@
 <template>
-    <h1>Employee</h1>
+    <div>
+        <h1>Bonjour {{  }}</h1>
+
+        <Planning></Planning>
+
+    </div>
 </template>
 
 <script>
+
+import Planning from '../Planning.vue';
+import 'fullcalendar/dist/fullcalendar.css'
+
 export default{
     name: 'Employee',
     props:{
 
+    },components: {
+        Planning
     }
 }
 </script>
