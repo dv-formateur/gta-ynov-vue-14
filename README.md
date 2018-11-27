@@ -1,14 +1,23 @@
 # gta-ynov-vue
 
+
+## Website Link
+-> https://gta-ynov-vue-thomaspich.herokuapp.com
+
+
+# Todo List
+
+### 23 November 2018
+Push on a webserver | Add Events and Make routes for the employee
+
 ### 22 November 2018
-Showing calendar and add events | Make routes for the employee
+Showing calendar and add events
 
 ### 16 November 2018
 Understand how works Vue CLI and how to start a project with it
 
 ### 15 November 2018
 Understand the project and try to start it
-
 
 ## Project setup
 ```
