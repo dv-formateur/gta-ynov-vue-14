@@ -1,8 +1,26 @@
 <template>
     <div>
-        <p>Date contrat: {{ user.contractStart | moment("dddd, MMMM Do YYYY")}}</p>
-        <p v-if="user.contractEnd">Date de fin de contrat: {{ user.contractEnd | moment("dddd, MMMM Do YYYY")}}</p>
-        <p>Solde de Congés: {{ user.holiday }}</p>
+        <b-row>
+            <b-col md="12">
+                <b-card
+                        header-tag="header"
+                        footer-tag="footer">
+                    <div slot="header">
+                        <strong> Dashboard</strong>
+                        <div class="card-header-actions">
+                            <a href="https://bootstrap-vue.js.org/docs/components/list-group" class="card-header-action" rel="noreferrer noopener" target="_blank">
+                                <small class="text-muted">docs</small>
+                            </a>
+                        </div>
+                    </div>
+                    <b-list-group>
+                        <b-list-group-item>Contract start: {{ user.contractStart | moment("DD-MM-YYYY")}}</b-list-group-item>
+                        <b-list-group-item v-if="user.contractEnd">Contract end: {{ user.contractEnd | moment("DD-MM-YYYY")}}</b-list-group-item>
+                        <b-list-group-item>Vacation days available: {{ user.vacation }}</b-list-group-item>
+                    </b-list-group>
+                </b-card>
+            </b-col>
+        </b-row>
     </div>
 </template>
 

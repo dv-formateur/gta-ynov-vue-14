@@ -5,7 +5,7 @@ export default {
     getUserData: (id) => {
 
         // Set the dataBase if is empty
-        if (!(localStorage.getItem('database'))){
+        if (!(localStorage.getItem('database'))) {
             localStorage.setItem('database', JSON.stringify(dataJSON))
         }
 
@@ -39,4 +39,23 @@ export default {
         }
         localStorage.setItem('database', JSON.stringify(data))
     },
+
+    setNewPassword: (id, oldPassword, newPassword, confirmPassword) => {
+
+        var i = 0;
+        var data = JSON.parse(localStorage.getItem('database'));
+
+        while (i < data.length) {
+            if (data[i].id === id){
+                if (data[i].password === oldPassword){
+                    if (newPassword === confirmPassword){
+                        data[i].password = newPassword;
+                        localStorage.setItem('database', JSON.stringify(data))
+                    }
+                }
+            }
+        }
+
+    }
+
 }

@@ -5,22 +5,23 @@
     "firstName": "Thomas",
     "lastName": " Pichard",
     "email": "thomas.pichard@ynov.com",
+    "password": "azerty",
     "birthDate": "1996-09-06",
     "address": "20 rue mirebeau ",
     "contractStart": "2018-09-01",
     "contractEnd": "2018-12-01",
-    "holiday": "5",
+    "vacation": "5",
     "planning":[{
       "id": 1,
       "title": "Event 1",
-      "start": "2018-11-22 10:20",
-      "end": "2018-11-22 10:50"
+      "start": "2018-11-22",
+      "end": "2018-11-23"
     },
       {
         "id": 2,
         "title": "Event 2",
-        "start": "2018-11-22 11:20",
-        "end": "2018-11-22 11:50"
+        "start": "2018-11-30",
+        "end": "2018-12-03"
       }]
   },
   {
@@ -28,12 +29,13 @@
     "type": "employee",
     "firstName": "Thomas",
     "lastName": " Pichard",
-    "email": "thomas.pichard@ynov.com",
+    "email": "pichard.thomas@icloud.com",
+    "password": "azerty",
     "birthDate": "1996-09-06",
     "address": "20 rue mirebeau ",
     "contractStart": "2018-09-01",
     "contractEnd": "2018-12-01",
-    "holiday": "0",
+    "vacation": "0",
     "planning":[{
       "id": 1,
       "title": "Event 1",
